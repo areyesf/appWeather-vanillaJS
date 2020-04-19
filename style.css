@@ -1,0 +1,80 @@
+/* IMPORT FONT */
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,400&display=swap");
+
+/* RESET STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* COLOR PALETTE */
+:root {
+  --color-gray: #74777c;
+  --color-white: #fff;
+  --color-bg-error: rgb(202, 78, 78, 0.8);
+}
+/* GENERAL STYLES */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--color-gray);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+/* CONTAINER */
+.container {
+  background-color: var(--color-white);
+  color: var(--color-gray);
+  height: 90vh;
+  width: 50%;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  font-size: 3rem;
+}
+/* HEADER */
+header {
+  width: 100%;
+}
+h1 {
+  font-size: 2.25rem;
+}
+/* WEATHER-DATA */
+.weather-data {
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.icon {
+  width: 30%;
+  height: 30%;
+}
+.temperature {
+  font-size: 4.5rem;
+  font-weight: bold;
+}
+.temperature-type {
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+.description {
+  font-weight: 100;
+}
+.location {
+  font-weight: 100;
+}
+.error{
+  display: block;
+  width: 100%;
+  background-color: var(--color-bg-error);
+  color: var(--color-white);
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 3px;
+}
