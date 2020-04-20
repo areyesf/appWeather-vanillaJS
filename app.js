@@ -62,7 +62,7 @@ function showError() {
 // get data calling api
 async function getWeather(latitude, longitude) {
   const keyApi = "b5a6b09813286dfcb5b3827dcc58d61d";
-  const urlApi = `http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${keyApi}`;
+  const urlApi = `https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${keyApi}`;
 
   await fetch(urlApi)
     .then(async (response) => {
